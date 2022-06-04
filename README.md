@@ -6,9 +6,11 @@ The root of this repository contains multiple Spring Boot projects that sever di
 
 
 
-If you like my content follow me on linkedin: https://www.linkedin.com/in/paladuta-stefan-255b6a136/
-or follow me on medium: https://medium.com/@stefan.paladuta17
-or just buy me a nice BIG cup of coffee: https://www.buymeacoffee.com/stefansplace :)
+---
+If you like my content, then just follow me on linkedin: https://www.linkedin.com/in/paladuta-stefan-255b6a136/
+or follow me on medium: https://medium.com/@stefan.paladuta17.
 
-Thanks,
-Stefan.
+[...] or just buy me a nice BIG cup of coffee:
+
+<a href="https://www.buymeacoffee.com/stefansplace" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+---
