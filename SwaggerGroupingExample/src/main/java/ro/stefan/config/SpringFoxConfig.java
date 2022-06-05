@@ -25,7 +25,7 @@ public class SpringFoxConfig {
 	@Bean
 	public Docket api2() {
 		return new Docket(DocumentationType.SWAGGER_2)
-				.groupName("accouting")
+				.groupName("accounting")
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("ro.stefan.external.apis.accounting"))
 				.paths(PathSelectors.any())
