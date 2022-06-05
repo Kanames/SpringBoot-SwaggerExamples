@@ -1,9 +1,5 @@
 package ro.stefan.config;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,17 +14,18 @@ import springfox.documentation.spring.web.plugins.Docket;
 
 @Configuration
 public class SpringFoxConfig {
-	
+
+
 	@Bean
-	public Docket getDocket() {
-		/* here tags is optional, it just adds a description in the UI
-		 by default description is class name, so if you use same tag using 
-		 `@Api` on different classes it will pick one of the class name as 
-		 description, so better define your own description for them */
+	public Docket api3() {
+		// here tags is optional, it just adds a description in the UI
+		// by default description is class name, so if you use same tag using 
+		// `@Api` on different classes it will pick one of the class name as 
+		// description, so better define your own description for them
 		return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
 				.tags(new Tag("security", "security related"), 
-				      new Tag("loan", "loan related"))
+				          new Tag("loan", "loan related"))
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("ro.stefan.external.apis"))
 				.paths(PathSelectors.any())
