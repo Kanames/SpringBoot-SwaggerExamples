@@ -8,7 +8,6 @@ import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
-import springfox.documentation.service.Tag;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
@@ -17,28 +16,32 @@ public class SpringFoxConfig {
 
 
 	@Bean
-	public Docket api3() {
-		// here tags is optional, it just adds a description in the UI
-		// by default description is class name, so if you use same tag using 
-		// `@Api` on different classes it will pick one of the class name as 
-		// description, so better define your own description for them
+	public Docket getDocketInstance() {
 		return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo())
-				.tags(new Tag("security", "security related"), 
-				          new Tag("loan", "loan related"))
+                .apiInfo(apiInfoExample01())
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("ro.stefan.external.apis"))
+				.apis(RequestHandlerSelectors.basePackage("ro.stefan.controller"))
 				.paths(PathSelectors.any())
 				.build();
 	}
 	
-	private ApiInfo apiInfo() {
+	private ApiInfo apiInfoExample01() {
         return new ApiInfoBuilder()
-                .title("Openapi OAS3 with springfox ")
-                .description("Code first approach")
-                .version("1.0.0")
-                .contact(new Contact("Marone", "https://wstutorial.com", "test@wstutorial.com"))
+                .title("API Info - Title section")
+                .description("API Info - Description section")
+                .version("0.0.1")
+                .contact(new Contact("Stefan", "https://medium.com/@stefan.paladuta17", "test@test.com"))
                 .build();
     }
 	
+//	private ApiInfo apiInfoExample02() {
+//        return new ApiInfoBuilder()
+//                .title("API Info - Title section")
+//                .description("API Info - <strong>Description</strong> section <br> testing something new <br> <table> <tr><td>1</td><td>2</td></tr> <tr><td>3</td><td>4</td></tr> </table>")
+//                .version("0.0.1")
+//                .contact(new Contact("Stefan", "https://medium.com/@stefan.paladuta17", "test@test.com"))
+//                .build();
+//    }
+	
+
 }
