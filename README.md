@@ -8,7 +8,31 @@ The root of this repository contains multiple Spring Boot projects that sever di
 
 
 
+    So let’s start with the famous question **Swagger** vs **OpenAPI**:
 
+> Although the terms once referred to the same thing, they can no longer be used interchangeably…even though some people still do. In 2021, **OpenAPI refers to the industry-standard specification for RESTful API design. Swagger refers to a set of SmartBear tools**. — [https://nordicapis.com/](https://nordicapis.com/whats-the-difference-between-swagger-and-openapi/#:~:text=Although%20the%20terms%20once%20referred,a%20set%20of%20SmartBear%20tools)
+
+
+
+    To better understand this kind of political things I like to create timelines, so I made this timelines based on my weeks of research (if something is wrong please feel free to comment bellow as it helps us all to publish articles/tutorial/etc. that are more useful and true to the meaning)
+
+
+
+- Swagger is a language-agnostic specification, meaning that it can be used with any programming language
+- Swagger is a RESTful API specification, meaning that it can be used to document APIs that follow the REST architectural style
+- Swagger is not a replacement for documentation, meaning that it should be used in addition to other forms of documentation such as user manuals and tutorials
+
+
+
+I divide this repository made for the medium article in the following projects:
+
+Project: [SwaggerApiInfoExample](https://github.com/Kanames/SpringBoot-SwaggerExamples/tree/main/SwaggerApiInfoExample "SwaggerApiInfoExample")
+
+Project: [SwaggerDocketAdvancedDetailsExample](https://github.com/Kanames/SpringBoot-SwaggerExamples/tree/main/SwaggerDocketAdvancedDetailsExample "SwaggerDocketAdvancedDetailsExample")
+
+Project: [SwaggerGroupingExample](https://github.com/Kanames/SpringBoot-SwaggerExamples/tree/main/SwaggerGroupingExample "SwaggerGroupingExample")
+
+Project: [SwaggerGroupingUsingTagsExample](https://github.com/Kanames/SpringBoot-SwaggerExamples/tree/main/SwaggerGroupingUsingTagsExample "SwaggerGroupingUsingTagsExample")
 
 
 
