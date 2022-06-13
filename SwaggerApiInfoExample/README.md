@@ -16,7 +16,7 @@ Adding ***ApiInfo*** couldn’t have been easier, so I present it by a simple 
 
 First we will see how the swagger-ui looks **without** ApiInfo:
 
-[Image of swagger-ui without ApiInfo](SpringBootSwaggerFirefoxAndOpenApiTestings\SpringBoot-SwaggerExamples\SwaggerApiInfoExample\dev_resources\Swagger-UI-withoutAPI-Info_with_html.png)
+[Image of swagger-ui without ApiInfo](dev_resources\Swagger-UI-withoutAPI-Info_with_html.png)
 
 So we can see that with the **ApiInfo** based on our example added a lot of new things:
 
