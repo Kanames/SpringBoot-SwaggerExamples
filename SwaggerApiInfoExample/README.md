@@ -1,6 +1,6 @@
 # Swagger API Info Example
 
-In this repositoryI am going to show how to add ApiInfo object in your Docket so that you will have a more professional look on your Swagger UI.
+In this repository I am going to show how to add ApiInfo object in your Docket so that you will have a more professional look on your Swagger UI.
 
 My medium post here: https://medium.com/p/ef2ba65ebb86
 
@@ -16,13 +16,7 @@ Adding ***ApiInfo*** couldn’t have been easier, so I present it by a simple 
 
 First we will see how the swagger-ui looks **without** ApiInfo:
 
-```
 [Image of swagger-ui without ApiInfo](SpringBootSwaggerFirefoxAndOpenApiTestings\SpringBoot-SwaggerExamples\SwaggerApiInfoExample\dev_resources)
-```
-
-Now we will see how the swagger-ui looks **with** ApiInfo:
-
-
 
 So we can see that with the **ApiInfo** based on our example added a lot of new things:
 
